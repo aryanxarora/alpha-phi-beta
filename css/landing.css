@@ -56,11 +56,12 @@ header {
   transition: 0.7s;
   display: grid;
   align-items: center;
+  z-index: 20;
 }
 
 header.sticky {
   padding: 5px;
-  background: #5E181B;
+  background: black;
   color: white;
 }
 
@@ -108,7 +109,7 @@ nav ul li a {
   text-decoration: none;
   font-size: 14px;
   letter-spacing: 1.2px;
-  font-weight: 600;
+  font-weight: 400;
   transition: 0.7s ease;
 }
 
@@ -124,6 +125,77 @@ header nav ul li a:hover {
   min-width: 100%; 
   min-height: 100%;
 }
+
+.container {
+  margin: 100px 20%;
+}
+
+.container > h1 {
+  font-size: 30px;
+  font-weight: 300;
+  margin-top: 100px;
+  text-align: justify;
+}
+
+.quote {
+  text-align: center;
+  font-size: 2rem;
+  margin: auto;
+  padding: 15px;
+  font-weight: 400;
+  border: 2px solid black;
+  max-width: 70%;
+  position: relative;
+  transform: scale(0.8);
+  display: grid;
+  place-items: center;
+}
+
+blockquote {
+  color: black;
+  font-style: italic;
+  position: relative;
+  z-index: 20;
+}
+
+.left {
+  position: absolute;
+  top: -50px;
+  left: -20px;
+  width: 150px;
+  text-align: left;
+  z-index: 10;
+  font-size: 5rem;
+  color: #5E181B;
+  background-color: white;
+  line-height: 200px;
+}
+
+.right {
+  position: absolute;
+  bottom: -50px;
+  right: -20px;
+  width: 150px;
+  text-align: right;
+  z-index: 10;
+  font-size: 5rem;
+  color: #5E181B;
+  background-color: white;
+  line-height: 200px;
+}
+
+small {
+  font-size: 1.7rem;
+  color: #5E181B;
+  position: relative;
+  z-index: 20;
+}
+small:before {
+  content: "\2014 \0020";
+  width: 5px;
+}
+
+
 
 @media screen and (max-width: 864px) {
   .logo {
@@ -143,9 +215,19 @@ header nav ul li a:hover {
     transform: scale(0.7);
   }
 
+  .container {
+    margin: 50px 10%;
+    text-align: justify;
+  }
+
+  .container > h1 {
+    margin-top: 50px;
+    font-size: 20px;
+  }
+
   header.sticky {
         padding: 5px;
-        background: #3B0F11;
+        background: black;
         color: white;
   }
 
@@ -287,4 +369,106 @@ header nav ul li a:hover {
 
 .hidden {
   display: none;
+}
+
+/* STYLES SPECIFIC TO FOOTER  */
+.footer {
+  width: 100%;
+  position: relative;
+  height: auto;
+  background-color: black;
+  padding: 50px;
+}
+.footer .col {
+  width: 190px;
+  height: auto;
+  float: left;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  padding: 0px 20px 20px 20px;
+}
+.footer .col h1 {
+  margin: 0;
+  padding: 0;
+  font-family: inherit;
+  font-size: 12px;
+  line-height: 17px;
+  padding: 20px 0px 5px 0px;
+  color: rgba(255, 255, 255, 0.575);
+  font-weight: normal;
+  text-transform: uppercase;
+  letter-spacing: 0.250em;
+}
+.footer .col ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.footer .col ul li {
+  color: #999999;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: bold;
+  padding: 5px 0px 5px 0px;
+  cursor: pointer;
+  transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+.social ul li {
+  display: inline-block;
+  padding-right: 5px !important;
+}
+
+.footer .col ul li:hover {
+  color: #ffffff;
+  transition: .1s;
+  -webkit-transition: .1s;
+  -moz-transition: .1s;
+}
+.clearfix {
+  clear: both;
+}
+@media only screen and (min-width: 1280px) {
+  .contain {
+    width: 1200px;
+    margin: 0 auto;
+  }
+}
+@media only screen and (max-width: 1139px) {
+  .contain .social {
+    width: 1000px;
+    display: block;
+  }
+  .social h1 {
+    margin: 0px;
+  }
+}
+@media only screen and (max-width: 950px) {
+  .footer .col {
+    width: 33%;
+  }
+  .footer .col h1 {
+    font-size: 14px;
+  }
+  .footer .col ul li {
+    font-size: 13px;
+  }
+}
+@media only screen and (max-width: 500px) {
+    .footer .col {
+      width: 50%;
+    }
+    .footer .col h1 {
+      font-size: 14px;
+    }
+    .footer .col ul li {
+      font-size: 13px;
+    }
+}
+@media only screen and (max-width: 340px) {
+  .footer .col {
+    width: 100%;
+  }
 }
