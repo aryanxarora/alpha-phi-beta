@@ -59,7 +59,7 @@ div.header h2 {
     color: #cfd7de;
     max-width: 30rem;
     margin: auto;
-  }
+}
 
 @media (min-width: 62em) {
   div.header h1 {
@@ -68,30 +68,23 @@ div.header h2 {
   }
 }
 
-@media screen and (max-width: 864px) {
-    div.header h2 {
-        margin: 10vw;
-    }
-
-    #timeline section.year section ul li img{ 
-        width: 200px;
-    }
-}
-
 div.item {
   display: flex;
   flex: auto;
   padding: 0rem 1rem 0rem 1rem;
 }
 
+/* ! THIS */
 #timeline {
-  position: relative;
+  position: absolute;
   display: table;
   height: 100%;
   margin-left: auto;
   margin-right: auto;
   margin-top: 5rem;
+  left: 10vw;
 }
+
 #timeline div:after {
   content: '';
   width: 2px;
@@ -178,20 +171,32 @@ div.item {
   margin-left: .5rem;
 }
 #timeline section.year section ul li:before {
-  content: '·';
+  content: ' ';
   margin-left: -.5rem;
   padding-right: .3rem;
 }
 #timeline section.year section ul li:not(:first-child) {
   margin-top: .5rem;
 }
+
 #timeline section.year section ul li span.price {
-  color: mediumturquoise;
+  /* color:#E98234; */
   font-weight: 500;
+}
+
+#timeline section.year section ul li span.headline {
+  font-weight: 600;
+  font-size: 1.1em;
 }
 
 #price {
   display: inline;
+}
+
+#timeline section.year section ul li img {
+  position: absolute;
+  right: -45vw;
+  width: 400px;
 }
 
 svg {
@@ -200,3 +205,25 @@ svg {
   box-shadow: 0 4px 6px rgba(50, 50, 93, 0.11), 0 1px 3px rgba(0, 0, 0, 0.08);
 }
 
+@media screen and (max-width: 864px) {
+  div.header h2 {
+      margin: 10vw;
+  }
+
+  #timeline {
+    position: relative;
+    display: table;
+    height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    left: 0;
+  }
+
+  #timeline section.year section ul li img {
+    position: relative;
+    right: 0;
+    width: 200px;
+    height: auto;
+  }
+}
