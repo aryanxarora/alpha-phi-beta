@@ -1,6 +1,8 @@
 window.addEventListener("scroll", function() {
     var header = document.querySelector("header");
     header.classList.toggle("sticky", window.scrollY > 100);
+    var nav = document.getElementById("nav-btn");
+    nav.classList.toggle("sticky", window.scrollY > 100);
   })
 
 var typed = new Typed('.type', {
