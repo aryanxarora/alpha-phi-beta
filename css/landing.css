@@ -46,6 +46,12 @@ body {
 
 .apb_logo {
   width: 20%;
+  transition-delay: 2s;
+}
+
+.apb_logo:hover {
+  transition-delay: 2s;
+  content: url('/media/logo_color.png');
 }
 
 header {
@@ -85,24 +91,24 @@ nav {
   text-decoration: none;
 }
 
-nav ul {
+header nav ul {
   float: right;
 }
 
-nav ul li {
+header nav ul li {
   display: inline-block;
   float: left;
 }
 
-nav ul li:not(:first-child) {
+header nav ul li:not(:first-child) {
   margin-left: 48px;
 }
 
-nav ul li:last-child {
+header nav ul li:last-child {
   margin-right: 24px;
 }
 
-nav ul li a {
+header nav ul li a {
   display: inline-block;
   outline: none;
   color: white;
@@ -273,6 +279,7 @@ small:before {
 
 .branchPageTile img{
   width: 100%;
+  filter: grayscale(100%);
 }
 .branchPageTile img:before{
   display: block;
