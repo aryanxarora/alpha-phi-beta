@@ -91,6 +91,7 @@ nav {
   font-size: 25px;
   letter-spacing: 0px;
   text-decoration: none;
+  transition: 0.3s;
 }
 
 .logo img {
@@ -114,6 +115,7 @@ header nav ul li:not(:first-child) {
 
 header nav ul li:last-child {
   margin-right: 24px;
+  text-transform: uppercase;
 }
 
 header nav ul li a {
@@ -158,10 +160,6 @@ small:before {
   font-weight: 600;
 }
 
-.section {
-
-}
-
 .the-alphan-crusade {
   display: grid;
   place-items: center;
@@ -170,13 +168,13 @@ small:before {
 
 .headings {
   text-align: center;
-  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .headings h1 {
   margin: 0;
   font-size: 4rem;
   color: #5E181B;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .headings h2 {
@@ -211,6 +209,55 @@ small:before {
   border: 1px solid #5E181B;
   text-decoration: none;
   color: #5E181B;
+}
+
+.section2 {
+  width: 100%;
+  height: 100vh;
+  background-color: #290a0c;
+}
+
+.our-numbers {
+  display: grid;
+  place-items: center;
+}
+
+.headings2 h1 {
+  color: white;
+  font-size: 3rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.our-numbers-top {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85vw;
+}
+
+.our-numbers-top-data {
+  margin: 1vw 4vw;
+  width: 13vw;
+  opacity: 80%;
+}
+
+.our-numbers-top-data h1{
+  font-family: 'Roboto Condensed', sans-serif;
+  font-size: 5rem;
+  text-align: center;
+  margin: 0;
+  color: white;
+}
+
+.our-numbers-top-data h2 {
+  font-family: 'Roboto Condensed', sans-serif;
+  color: white;
+  font-weight: 500;
+  text-align: center;
+  font-size: 1.3rem;
+}
+
+.our-numbers-top-data .smaller {
+  font-size: 0.9rem;
 }
 
 
@@ -287,6 +334,36 @@ small:before {
     top: 50px;
   }
 
+  .section2 {
+    width: 100%;
+    height: auto;
+    background-color: #290a0c;
+  }
+  
+  .our-numbers-top {
+    display: flex;
+    width: 70%;
+    margin-bottom: 50px;
+  }
+
+  .our-numbers-top-data {
+    margin: 1vw 0;
+    width: 50%;
+    opacity: 80%;
+    text-align: left;
+  }
+  
+  .our-numbers-top-data h1{
+    font-size: 2rem;
+  }
+  
+  .our-numbers-top-data h2 {
+    font-size: 0.7rem;
+  }
+  
+  .our-numbers-top-data .smaller {
+    font-size: 0.6rem;
+  }
 
   .nav-wrapper {
         position: fixed;
@@ -347,6 +424,11 @@ small:before {
   }
   .nav-wrapper ul li:nth-child(10) a {
         transition-delay: 0.55s;
+  }
+
+  header nav ul li:last-child {
+    margin-right: 24px;
+    text-transform: none;
   }
 
   .shop-btn {
