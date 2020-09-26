@@ -48,10 +48,6 @@ body {
   width: 20%;
 }
 
-.apb_logo:hover {
-  content: url('/media/logo_color.png');
-}
-
 .landing-buttons {
   margin-top: 10px;
 }
@@ -230,7 +226,7 @@ small:before {
 
 .section2 {
   width: 100%;
-  height: 90vh;
+  height: 180vh;
   background-color: #290a0c;
   display: grid;
   place-items: center;
@@ -257,7 +253,7 @@ small:before {
 .our-numbers-top-data {
   margin: 1vw 4vw;
   width: 13vw;
-  opacity: 80%;
+  opacity: 70%;
 }
 
 .our-numbers-top-data h1{
@@ -278,6 +274,70 @@ small:before {
 
 .our-numbers-top-data .smaller {
   font-size: 0.9rem;
+}
+
+.our-numbers-bottom {
+  color: white;
+  width: 85vw;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  text-transform: uppercase;
+  opacity: 40%;
+  font-family: 'Roboto Condensed', sans-serif;
+  margin-right: 5vw;
+}
+
+.our-numbers-bottom-top {
+  display: flex;
+  margin-top: 10vh;
+}
+
+.our-numbers-bottom h1 {
+  font-size: 1.5rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.our-numbers-bottom-bottom {
+  display: flex;
+  margin: 10vh 0px;
+}
+
+.our-numbers-bottom-flex {
+  display: flex;
+}
+
+.executive {
+  flex: 0.6;
+  margin-right: 100px;
+}
+
+.legislative {
+  flex: 0.4;
+}
+
+.judiciary {
+  flex: 0.6;
+  margin-right: 100px;
+}
+
+.campus {
+  flex: 0.4;
+}
+
+.our-numbers-bottom-data {
+  margin: 1vw 2.1vw;
+}
+
+.our-numbers-bottom-data h1 {
+  font-size: 4rem;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.our-numbers-bottom-data h2 {
+  font-size: 0.9rem;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 
@@ -363,11 +423,16 @@ small:before {
     height: auto;
     background-color: #290a0c;
   }
+
+  .headings2 h1 {
+    margin: 50px 0px;
+    font-size: 2rem;
+  }
   
   .our-numbers-top {
     display: flex;
     width: 70%;
-    margin-bottom: 50px;
+    margin-bottom: 20px;
   }
 
   .our-numbers-top-data {
@@ -387,6 +452,74 @@ small:before {
   
   .our-numbers-top-data .smaller {
     font-size: 0.6rem;
+  }
+
+  .our-numbers-bottom {
+    color: white;
+    width: 100%;
+    text-align: center;
+    display: grid;
+    place-items: center;
+    text-transform: uppercase;
+    opacity: 40%;
+    font-family: 'Roboto Condensed', sans-serif;
+    transform: scale(0.85);
+  }
+  
+  .our-numbers-bottom-top {
+    display: block;
+    margin-top: 0;
+  }
+  
+  .our-numbers-bottom h1 {
+    font-size: 1.5rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .our-numbers-bottom-bottom {
+    display: block;
+    margin: 0vh 0px;
+  }
+  
+  .our-numbers-bottom-flex {
+    display: flex;
+  }
+  
+  .executive {
+    flex: 0.0;
+    margin-right: 0;
+    margin-top: -5vh;
+  }
+  
+  .legislative {
+    flex: 0.0;
+    margin-top: 5vh;
+  }
+  
+  .judiciary {
+    flex: 0.0;
+    margin-right: 0;
+    margin-top: 5vh;
+  }
+  
+  .campus {
+    flex: 0.0;
+    margin-top: 5vh;
+  }
+  
+  .our-numbers-bottom-data {
+    margin: 1vw 0vw;
+  }
+  
+  .our-numbers-bottom-data h1 {
+    font-size: 2rem;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .our-numbers-bottom-data h2 {
+    font-size: 0.7rem;
+    font-weight: 400;
+    font-family: 'Roboto Condensed', sans-serif;
   }
 
   .nav-wrapper {

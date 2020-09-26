@@ -13,3 +13,5 @@ var typed = new Typed('.type', {
     backSpeed: 60,
     loop: true
 });
+
+$('.num').counterUp({delay: 10, timeout: 1000});
