@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 html {
@@ -19,6 +19,10 @@ body {
   font-weight: 400;
   background-position: center;
   background-size: cover;
+}
+
+a {
+  text-decoration: none;
 }
 
 .grid_center {
@@ -123,7 +127,7 @@ header nav ul li {
 }
 
 header nav ul li:not(:first-child) {
-  margin-left: 48px;
+  margin-left: 35px;
 }
 
 header nav ul li:last-child {
@@ -136,7 +140,7 @@ header nav ul li a {
   outline: none;
   color: white;
   text-decoration: none;
-  font-size: 12px;
+  font-size: 0.9vw;
   letter-spacing: 1.2px;
   font-weight: 400;
   transition: 0.3s ease;
@@ -226,126 +230,315 @@ small:before {
 
 .section2 {
   width: 100%;
-  height: 180vh;
-  background-color: #290a0c;
-  display: grid;
-  place-items: center;
-}
-
-.our-numbers {
-  display: grid;
-  place-items: center;
-}
-
-.headings2 h1 {
+  height: auto;
+  background-color: #2b0d0e;
   color: white;
-  font-size: 3rem;
+  display: grid;
+  place-items: center;
   font-family: 'Roboto Condensed', sans-serif;
-  margin-bottom: 5vw;
 }
 
-.our-numbers-top {
+.section2 .our-numbers {
+  width: 90%;
+  margin: 10vh 0px 15vh 0px;
+}
+
+.section2 .top {
   display: flex;
   flex-wrap: wrap;
-  width: 85vw;
+  justify-content: center;
+  opacity: 60%;
 }
 
-.our-numbers-top-data {
-  margin: 1vw 4vw;
-  width: 13vw;
-  opacity: 70%;
+.section2 .bottom .executive {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
-.our-numbers-top-data h1{
-  font-family: 'Roboto Condensed', sans-serif;
-  font-size: 5rem;
+.section2 .bottom .judiciary {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section2 .bottom .legislative {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.section2 .bottom .campus {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.section2 .bottom h1 {
   text-align: center;
   margin: 0;
-  color: white;
 }
 
-.our-numbers-top-data h2 {
-  font-family: 'Roboto Condensed', sans-serif;
-  color: white;
-  font-weight: 500;
+.section2 .top .box {
+  width: 24%;
+  height: auto;
+  margin: 5px;
   text-align: center;
-  font-size: 1.3rem;
-}
-
-.our-numbers-top-data .smaller {
-  font-size: 0.9rem;
-}
-
-.our-numbers-bottom {
-  color: white;
-  width: 85vw;
-  text-align: center;
-  display: grid;
-  place-items: center;
   text-transform: uppercase;
-  opacity: 40%;
-  font-family: 'Roboto Condensed', sans-serif;
-  margin-right: 5vw;
+  position: relative;
 }
 
-.our-numbers-bottom-top {
+.section2 .bottom .box {
+  width: 22%;
+  height: 13vh;
+  position: relative;
+  margin: 5px;
+  text-transform: uppercase;
+}
+
+.section2 .bottom .judiciary .box {
+  width: 17%;
+}
+
+.section2 .bottom {
   display: flex;
+  opacity: 40%;
+  margin-top: 15vh;
+}
+
+.section2 .left {
+  flex: 0.6;
+}
+
+.section2 .right {
+  flex: 0.4;
+}
+
+.section2 .top .box h1 {
+  font-size: 4.2rem;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.section2 .top .box h2 {
+  font-size: 1.5rem;
+  text-align: center;
+  font-weight: 400;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.section2 .bottom .box h1 {
+  font-size: 3rem;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.section2 .bottom .box h2 {
+  font-size: 0.95rem;
+  text-align: center;
+  font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 500;
+}
+
+.section2 .bottom .left > h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section2 .bottom .right > h1 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+.section2 .space {
   margin-top: 10vh;
 }
 
-.our-numbers-bottom h1 {
-  font-size: 1.5rem;
-  font-family: 'Roboto Condensed', sans-serif;
+.section4 {
+  width: 100%;
+  height: auto;
+  background-color: white;
+  display: grid;
+  place-items: center;
 }
 
-.our-numbers-bottom-bottom {
+.section4 .left {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.section4 .right {
+  width: 100%;
+  height: auto;
+  display: grid;
+  place-items: center;
+  text-align: center;
+}
+
+.section4 .section-container {
+  width: 70%;
   display: flex;
-  margin: 10vh 0px;
 }
 
-.our-numbers-bottom-flex {
-  display: flex;
+.section4 .tab {
+  text-decoration: none;
+  color: white;
+  width: 90%;
+  height: auto;
+  background-color: red;
+  margin: 10px;
+  padding: 2vh 0vh;
+  border-radius: 5px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+  font-weight: 700;
+  transition: 0.3s ease;
 }
 
-.executive {
-  flex: 0.6;
-  margin-right: 100px;
+.section4 .tab:hover {
+  background-color: white;
+  border: inset 1px #5E181B;
+  color: #5E181B;
+  box-shadow: none;
 }
 
-.legislative {
-  flex: 0.4;
+.section4 .heading {
+  font-size: 3.2rem;
+  text-align: center;
+  color: rgba(0, 0, 0, 0.3);
 }
 
-.judiciary {
-  flex: 0.6;
-  margin-right: 100px;
+.section2 .heading {
+  font-size: 3.2rem;
+  text-align: center;
+  color: white;
 }
 
-.campus {
-  flex: 0.4;
+.section4 .c310954 {
+  background-color: #310954;
 }
 
-.our-numbers-bottom-data {
-  margin: 1vw 2.1vw;
+.section4 .c310954:hover {
+  border: inset 1px #310954;
+  color: #310954;
 }
 
-.our-numbers-bottom-data h1 {
-  font-size: 4rem;
-  font-family: 'Roboto Condensed', sans-serif;
+.section4 .cA00C3E {
+  background-color: #A00C3E;
 }
 
-.our-numbers-bottom-data h2 {
-  font-size: 0.9rem;
-  font-weight: 400;
-  font-family: 'Roboto Condensed', sans-serif;
+.section4 .cA00C3E:hover {
+  border: inset 1px #A00C3E;
+  color: #A00C3E;
+}
+
+.section4 .cE2524C {
+  background-color: #E2524C;
+}
+
+.section4 .cE2524C:hover {
+  border: inset 1px #E2524C;
+  color: #E2524C;
+}
+
+.section4 .c22594F {
+  background-color: #22594F;
+}
+
+.section4 .c22594F:hover {
+  border: inset 1px #22594F;
+  color: #22594F;
+}
+
+.section4 .c5E181B {
+  background-color: #5E181B;
+}
+
+.section4 .c5E181B:hover {
+  border: inset 1px #5E181B;
+  color: #5E181B;
+}
+
+.section4 .c262626 {
+  background-color: #580f45;
+}
+
+.section4 .c262626:hover {
+  border: inset 1px #580f45;
+  color: #580f45;
+}
+
+.section4 .c991677 {
+  background-color: #991677;
+}
+
+.section4 .c991677:hover {
+  border: inset 1px #991677;
+  color: #991677;
+}
+
+.section4 .cE98234 {
+  background-color: #E98234;
+}
+
+.section4 .cE98234:hover {
+  border: inset 1px #E98234;
+  color: #E98234;
+}
+
+.section4 .c1C2B5A {
+  background-color: #1C2B5A;
+}
+
+.section4 .c1C2B5A:hover {
+  border: inset 1px #1C2B5A;
+  color: #1C2B5A;
+}
+
+.section4 .cgreener {
+  background-color: #1c473f;
+}
+
+.section4 .cgreener:hover {
+  border: inset 1px #1c473f;
+  color: #1C2B5A;
+}
+
+.section4 .space {
+  margin-bottom: 10vh;
+}
+
+.section5 {
+  width: 100%;
+  height: 10vh;
+  background-color: rgb(48, 48, 48);
+  display: grid;
+  place-items: center;
+}
+
+.section5 .motto {
+  color: white;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 2vw;
 }
 
 
 @media screen and (max-width: 864px) {
 
+  .section5 .motto {
+    font-size: 1rem;
+  }
+
   .logo {
     margin: 0;
     padding: 0;
+  }
+
+  .section2 .space {
+    margin-top: 0vh;
   }
   
   .logo {
@@ -418,109 +611,81 @@ small:before {
     top: 50px;
   }
 
-  .section2 {
-    width: 100%;
-    height: auto;
-    background-color: #290a0c;
-  }
-
-  .headings2 h1 {
-    margin: 50px 0px;
-    font-size: 2rem;
-  }
-  
-  .our-numbers-top {
-    display: flex;
-    width: 70%;
-    margin-bottom: 20px;
-  }
-
-  .our-numbers-top-data {
-    margin: 1vw 0;
-    width: 50%;
-    opacity: 80%;
-    text-align: left;
-  }
-  
-  .our-numbers-top-data h1{
-    font-size: 2rem;
-  }
-  
-  .our-numbers-top-data h2 {
-    font-size: 0.7rem;
-  }
-  
-  .our-numbers-top-data .smaller {
-    font-size: 0.6rem;
-  }
-
-  .our-numbers-bottom {
-    color: white;
-    width: 100%;
+  .section2 .top .box {
+    width: 40%;
+    height: 15vh;
+    margin: 5px;
     text-align: center;
-    display: grid;
-    place-items: center;
     text-transform: uppercase;
-    opacity: 40%;
-    font-family: 'Roboto Condensed', sans-serif;
-    transform: scale(0.85);
   }
   
-  .our-numbers-bottom-top {
+  .section2 .bottom .box {
+    width: 22%;
+    height: 8vh;
+    margin-top: 2vh;
+  }
+
+  .section2 .bottom {
     display: block;
-    margin-top: 0;
+    margin-top: 10vh;
   }
-  
-  .our-numbers-bottom h1 {
-    font-size: 1.5rem;
+
+  .section2 .top .box h1 {
+    font-size: 2.5rem;
+    text-align: center;
     font-family: 'Roboto Condensed', sans-serif;
   }
   
-  .our-numbers-bottom-bottom {
-    display: block;
-    margin: 0vh 0px;
-  }
-  
-  .our-numbers-bottom-flex {
-    display: flex;
-  }
-  
-  .executive {
-    flex: 0.0;
-    margin-right: 0;
-    margin-top: -5vh;
-  }
-  
-  .legislative {
-    flex: 0.0;
-    margin-top: 5vh;
-  }
-  
-  .judiciary {
-    flex: 0.0;
-    margin-right: 0;
-    margin-top: 5vh;
-  }
-  
-  .campus {
-    flex: 0.0;
-    margin-top: 5vh;
-  }
-  
-  .our-numbers-bottom-data {
-    margin: 1vw 0vw;
-  }
-  
-  .our-numbers-bottom-data h1 {
-    font-size: 2rem;
-    font-family: 'Roboto Condensed', sans-serif;
-  }
-  
-  .our-numbers-bottom-data h2 {
-    font-size: 0.7rem;
+  .section2 .top .box h2 {
+    font-size: 0.8rem;
+    text-align: center;
     font-weight: 400;
     font-family: 'Roboto Condensed', sans-serif;
   }
+  
+  .section2 .bottom .box h1 {
+    font-size: 1.5rem;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+  
+  .section2 .bottom .box h2 {
+    font-size: 0.5rem;
+    text-align: center;
+    font-family: 'Roboto Condensed', sans-serif;
+  }
+
+  .section2 .bottom .left > h1 {
+    margin-top: 5vh;
+  }
+
+  .section2 .bottom .right > h1 {
+    margin-top: 5vh;
+  }
+
+  .section4 .section-container {
+    width: 90%;
+    display: block;
+    cursor: pointer;
+  }
+
+  .section2 .heading {
+    font-size: 2.2rem;
+    text-align: center;
+    color: white;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 
   .nav-wrapper {
         position: fixed;
@@ -711,6 +876,10 @@ small:before {
   font-weight: normal;
   text-transform: uppercase;
   letter-spacing: 0.250em;
+}
+
+.footer .col img {
+  width: 150px;
 }
 
 .clearfix h1 {
