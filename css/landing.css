@@ -357,7 +357,7 @@ small:before {
 .section4 {
   width: 100%;
   height: auto;
-  background-color: white;
+  background-color: rgba(128, 128, 128, 0.13);
   display: grid;
   place-items: center;
 }
@@ -510,6 +510,58 @@ small:before {
   margin-bottom: 10vh;
 }
 
+.section4 .card {
+  width: 25vw;
+  height: 70vh;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
+  margin: 2vw;
+  transition: 0.3s ease;
+  min-width: 300px;
+}
+
+.section4 .card:hover {
+  transform: scale(1.1);
+}
+
+.section4 .slider {
+  display: flex;
+}
+
+.section4 .card .card-img {
+  width: 100%;
+  height: 40%;
+}
+
+.section4 .card .card-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px 10px 0px 0px;
+}
+
+.section4 .card .card-details {
+  margin: 30px;
+}
+
+.section4 .card .card-details h1 {
+  color: #5E181B;
+  font-size: 2vw;
+}
+
+.section4 .card .card-details p {
+  font-weight: 300;
+}
+
+.section4 .card .card-details span a {
+  color: #5E181B;
+  padding: 5px 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  border: 1px solid #5E181B;
+}
+
 .section5 {
   width: 100%;
   height: 10vh;
@@ -525,8 +577,36 @@ small:before {
   font-size: 2vw;
 }
 
+.section3 {
+  width: 100%;
+  height: 67vh;
+  background-color: rgba(128, 128, 128, 0.253);
+}
+
 
 @media screen and (max-width: 864px) {
+
+  .section4 {
+    overflow: hidden;
+  }
+
+  .section4 .card {
+    height: 60vh;
+    margin-bottom: 5vh;
+  }
+
+  .section4 .card .card-details h1 {
+    font-size: 5vw;
+  }
+
+  .section4 .card .card-details p {
+    font-size: 3.6vw;
+    margin-bottom: 20px;
+  }
+
+  .section4 .slider {
+    display: block;
+  }
 
   .section5 .motto {
     font-size: 1rem;
@@ -674,18 +754,6 @@ small:before {
     text-align: center;
     color: white;
   }
-
-
-
-
-
-
-
-
-
-
-
-
 
   .nav-wrapper {
         position: fixed;
