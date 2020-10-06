@@ -68,7 +68,9 @@ a {
 }
 
 .landing-btn a:hover {
-  color: #999;
+  background-color: white;
+  color: black;
+  font-weight: 600;
 }
 
 header {
@@ -171,7 +173,7 @@ small:before {
 }
 
 .shop-btn {
-  padding: 10px 13px;
+  padding: 7px 13px;
   border-radius: 5px;
   border: 2px solid white;
   font-weight: 600;
@@ -226,6 +228,13 @@ small:before {
   border: 1px solid #5E181B;
   text-decoration: none;
   color: #5E181B;
+  transition: 0.3s ease;
+}
+
+.section-btn a:hover {
+  background-color: #5E181B;
+  color: white;
+  font-weight: 600;
 }
 
 .section2 {
@@ -398,8 +407,8 @@ small:before {
 }
 
 .section4 .tab:hover {
-  background-color: white;
-  border: inset 1px #5E181B;
+  background-color: rgba(128, 128, 128, 0.068);
+  border: inset 2px #5E181B;
   color: #5E181B;
   box-shadow: none;
 }
@@ -560,6 +569,12 @@ small:before {
   text-decoration: none;
   border-radius: 5px;
   border: 1px solid #5E181B;
+}
+
+.section4 .card .card-details span a:hover {
+  background-color: #5E181B;
+  color: white;
+  font-weight: 600;
 }
 
 .section5 {
@@ -969,6 +984,7 @@ small:before {
   margin: 0;
   padding: 0;
 }
+
 .footer .col ul li {
   color: #999999;
   font-size: 14px;
@@ -980,12 +996,30 @@ small:before {
   -webkit-transition: .2s;
   -moz-transition: .2s;
 }
+
+.footer .col ul li a {
+  color: #999999;
+    transition: .2s;
+  -webkit-transition: .2s;
+  -moz-transition: .2s;
+}
+
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
 }
 
-.footer .col ul li:hover {
+.social ul li img {
+  filter: invert(1);
+  opacity: 60%;
+  transition: 0.2s;
+}
+
+.social ul li img:hover{
+  opacity: 100%;
+}
+
+.footer .col ul li a:hover {
   color: #ffffff;
   transition: .1s;
   -webkit-transition: .1s;
