@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+body {
+    background-color: rgba(128, 128, 128, 0.123);
+}
+
+.nav-wrapper ul {
+    bottom: 6px;
+}
+
+.mynav {
+    background-color: black;
+}
+
+.display-grid-center {
+    display: grid;
+    place-items: center;
+}
+
+.mycontainer {
+    width: 80%;
+}
+
+.jumbotron {
+    padding: 22vh 0px 15vh 0px;
+    background-color: #471317;
+}
+
+.jumbotron h1 {
+    text-align: center;
+    color: white;
+    font-weight: 600;
+    font-size: 4vw;
+}
+
+.mycontainer > h1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 3vw;
+    color: rgba(0, 0, 0, 0.418);
+}
+
+.tab-group {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tab-group .tab {
+    width: 30%;
+    padding: 1.5vh 0px;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.2);
+    margin: 10px;
+    transition: 0.2s ease;
+}
+
+.tab-group .tab:hover {
+    transform: scale(1.05);
+    cursor: grab;
+}
+
+.tab-group .tab .year {
+    font-weight: 600;
+    font-size: 1.2vw;
+    margin-left: 2vw;
+}
+
+.tab-group .tab .name {
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.705);
+    font-size: 1.2vw;
+    margin-left: 1vw;
+}
+
+@media screen and (max-width: 864px) {
+
+    .jumbotron > h1 {
+        font-size: 12vw;
+    }
+
+    .mycontainer {
+        width: 95%;
+    }
+
+    .mycontainer > h1 {
+        font-size: 7vw;
+    }
+
+    .tab-group {
+        display: grid;
+        place-items: center;
+    }
+
+    .tab-group .tab {
+        width: 90%;
+    }
+
+    .tab-group .tab .year{
+        font-size: 5vw;
+    }
+
+    .tab-group .tab .name{
+        font-size: 5vw;
+    }
+
+
+}
