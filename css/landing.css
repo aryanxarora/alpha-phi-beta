@@ -408,7 +408,7 @@ small:before {
 
 .section4 .tab:hover {
   background-color: rgba(128, 128, 128, 0.068);
-  border: inset 2px #5E181B;
+  border: 3px #5E181B;
   color: #5E181B;
   box-shadow: none;
 }
