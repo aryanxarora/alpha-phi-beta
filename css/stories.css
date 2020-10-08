@@ -35,6 +35,7 @@ body {
 .stories-title .content {
     position: relative;
     top: 40vh;
+    z-index: 20;
 }
 
 .overlay {

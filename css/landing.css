@@ -40,12 +40,14 @@ a {
 
 .landing_content {
   width: 100%;
-  height: 50vh;
+  height: 60vh;
   display: grid;
   place-self: center;
   justify-items: center;
   place-items: center;
   color: white;
+  position: relative;
+  bottom: 10vh;
 }
 
 .apb_logo {
@@ -194,6 +196,7 @@ small:before {
   font-size: 4rem;
   color: #5E181B;
   font-family: 'Roboto Condensed', sans-serif;
+  font-weight: 600;
 }
 
 .headings h2 {
@@ -417,12 +420,16 @@ small:before {
   font-size: 3.2rem;
   text-align: center;
   color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+  margin: 5vh 0px;
 }
 
 .section2 .heading {
   font-size: 3.2rem;
   text-align: center;
   color: white;
+  font-weight: 600;
+  margin-bottom: 70px;
 }
 
 .section4 .c310954 {
@@ -521,7 +528,7 @@ small:before {
 
 .section4 .card {
   width: 25vw;
-  height: 70vh;
+  height: auto;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);
@@ -602,6 +609,43 @@ small:before {
   display: none;
 }
 
+.navbar {
+  background-color: black;
+  color: white;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar a {
+  color: white;
+  position: sticky;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-brand {
+  display: flex;
+}
+
+.navbar-brand p {
+  margin: 0;
+  font-weight: 600;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.navbar-brand img {
+  width: 30px;
+  margin-right: 10px;
+}
+
+.navbar ul li {
+  margin-right: 20px;
+  font-family: 'Roboto Condensed', sans-serif;
+}
+
+.nav-item .shop {
+  border-radius: 5px;
+  margin: 0;
+}
+
 
 @media screen and (max-width: 864px) {
 
@@ -610,7 +654,7 @@ small:before {
   }
 
   .section4 .card {
-    height: 60vh;
+    height: auto;
     margin-bottom: 5vh;
   }
 
@@ -655,6 +699,7 @@ small:before {
 
   .landing_content {
     height: 30vh;
+    
   }
 
   .landing_content h1 {
