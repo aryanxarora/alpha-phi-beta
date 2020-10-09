@@ -27,13 +27,3 @@ body {
     text-align: center;
     margin: 10px;
 }
-
-header {
-    background-color: black;
-    padding: 5px;
-}
-
-header nav ul li {
-    position: relative;
-    top: 15px;
-}
