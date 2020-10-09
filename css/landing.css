@@ -212,6 +212,7 @@ small:before {
 
 .image-text img {
   width: 50vw;
+  height: 60vh;
   border-radius: 10px;
   margin-right: 50px;
 }
@@ -527,7 +528,7 @@ small:before {
 }
 
 .section4 .card {
-  width: 25vw;
+  width: 28vw;
   height: auto;
   background-color: white;
   border-radius: 10px;
