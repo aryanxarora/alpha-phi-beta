@@ -529,7 +529,7 @@ small:before {
 
 .section4 .card {
   width: 28vw;
-  height: auto;
+  height: 105vh;
   background-color: white;
   border-radius: 10px;
   box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.2);

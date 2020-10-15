@@ -92,10 +92,6 @@ body {
     transition: 0.2s ease;
 }
 
-.hover-scale:hover {
-    transform: scale(1.05);
-}
-
 .read-btn a {
     color: #5E181B;
     border: 1px solid #5E181B;
