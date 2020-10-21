@@ -658,6 +658,7 @@ small:before {
   .section4 .card {
     height: auto;
     margin-bottom: 5vh;
+    width: 100%;
   }
 
   .section4 .card .card-details h1 {
@@ -670,7 +671,11 @@ small:before {
   }
 
   .section4 .slider {
-    display: block;
+    display: grid;
+    place-items: center;
+    background-color: red;
+    width: 90%;
+
   }
 
   .section5 .motto {
