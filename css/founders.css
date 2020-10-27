@@ -3,6 +3,10 @@
     font-family: 'Roboto Condensed', sans-serif;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -40,6 +44,8 @@ body {
     font-size: 5vw;
     font-weight: 700;
     margin-bottom: 15vh;
+    position: relative;
+    top: -90vh;
 }
 
 .container p {
@@ -57,6 +63,19 @@ body {
     height: 10vh;
 }
 
+.container img {
+    filter: invert(1);
+    position: absolute;
+    width: 30px;
+    top: 90vh;
+    left: 50vw;
+    transition: 0.3s ease;
+}
+
+.container img:hover {
+    transform: scale(2);
+}
+
 @media screen and (max-width: 864px) {
     .founders-img {
         position: relative;
@@ -71,6 +90,7 @@ body {
     .container h1 {
         font-size: 7vw;
         margin-bottom: 0vh;
+        top: 0vh;
     }
 
     .container p {
@@ -79,5 +99,9 @@ body {
 
     .container .space {
         height: 5vh;
+    }
+
+    .container img {
+        display: none;
     }
 }

@@ -53,9 +53,8 @@ a:hover {
 }
 
 .contact-info .right .circle {
-    width: 14vw;
-    height: 14vw;
-    border: 2px solid black;
+    width: 15vw;
+    height: 15vw;
     background-image: url('/media/Ruther-Flores-AΦB-2017C.png');
     background-size: cover;
     border-radius: 100%;
@@ -90,6 +89,7 @@ a:hover {
     background-color: white;
     color: #300d0f;
     font-weight: 600;
+    transition: 0.5s ease;
 }
 
 .join-apb .heading a:hover {
@@ -108,17 +108,21 @@ a:hover {
 }
 
 .browse .content {
-    width: 90%;
+    width: 100%;
     height: auto;
     overflow: hidden;
+    display: grid;
+    place-items: center;
 }
 
 .browse .content .tiles {
+    width: 100%;
+    justify-content: center;
     display: flex;
     overflow: scroll;
 }
 
-.browse .content p {
+.browse .content h2 {
     font-size: 1.5vw;
     color: rgba(255, 255, 255, 0.61);
     margin: 0;
@@ -128,12 +132,24 @@ a:hover {
 
 .browse .content .tiles .tile {
     width: 40vh;
-    height: 35vh;
-    background-color: rgba(255, 255, 255, 0.4);
+    height: 45vh;
+    background-color: white;
     margin: 2vw;
     margin-left: 0;
     border-radius: 10px;
+    transition: 0.5s ease;
 }
+
+.browse .content .tiles .tile:hover {
+    transform: scale(1.1);
+}
+
+.browse .content .tiles .tile img {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
 
 @media screen and (max-width: 864px) {
 
@@ -175,7 +191,19 @@ a:hover {
         font-size: 7vw;
     }
 
-    .browse .content p {
+    .browse .content .tiles {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        overflow: scroll;
+    }
+
+    .browse .content .tiles .tile {
+        margin-top: 5vh;
+    }
+
+    .browse .content h2 {
         font-size: 7.5vw;
         color: rgba(255, 255, 255, 0.61);
         margin: 0;

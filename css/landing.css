@@ -86,12 +86,6 @@ header {
   z-index: 20;
 }
 
-header.sticky {
-  padding: 5px;
-  background: black;
-  color: white;
-}
-
 nav {
   padding: 8px;
 }
@@ -158,7 +152,7 @@ header nav ul li a:hover {
   z-index: -1;
   position: absolute;
   right: 0;
-  bottom: 0;
+  bottom: -10vh;
   min-width: 100%;
   min-height: 100%;
 }
@@ -193,6 +187,7 @@ small:before {
 
 .headings h1 {
   margin: 0;
+  margin-top: 10vh;
   font-size: 4rem;
   color: #5E181B;
   font-family: 'Roboto Condensed', sans-serif;
@@ -212,7 +207,7 @@ small:before {
 
 .image-text img {
   width: 50vw;
-  height: 60vh;
+  height: auto;
   border-radius: 10px;
   margin-right: 50px;
 }
@@ -653,6 +648,11 @@ small:before {
 
   .section4 {
     overflow: hidden;
+  }
+
+  #myVideo {
+    bottom: 0;
+
   }
 
   .section4 .card {

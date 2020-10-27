@@ -197,7 +197,7 @@ div.item {
   position: absolute;
   right: -45vw;
   width: 400px;
-  height: 30vh;
+  height: auto;
   border-radius: 10px;
 }
 
