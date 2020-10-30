@@ -1161,49 +1161,71 @@
 
 
       <div class="section5">
-        <div>
-          <span class="motto">we will not be saved without wisdom</span>
-          <span class="motto"></span>
-          <span class="motto"></span>
+        <div id="text_slider">
+          <marquee behavior='slide' direction='up' class='motto'>we will not be saved without wisdom</marquee>
         </div>
       </div>
-<!-- FOOTER START -->
-<div class="footer">
-<div class="contain">
-  <div class="col" style="margin: 20px 100px 0px 0px;">
-    <img src="../media/logo_white.png" alt="">
-  </div>
-<div class="col">
-  <h1>About Us</h1>
-  <ul>
-    <li><a href="html/history.html">History</a></li>
-    <li>Stories</li>
-    <li>Events</li>
-    <li>Campus</li>
-    <li>Contact Us</li>
-  </ul>
-</div>
-<div class="col">
-  <h1>Honor Roll</h1>
-  <ul>
-    <li><a href="html/honorroll.html">Our Bar Top Notchers</a></li>
-    <li><a href="html/honorroll.html">Our Editors-In-Chief</a></li>
-    <li><a href="html/honorroll.html">Our Lord Chancellors</a></li>
-  </ul>
-</div>
-<div class="col social">
-  <h1>Social</h1>
-  <ul>
-    <li><a href="https://www.facebook.com/alphaphibeta.org"><img src="https://www.flaticon.com/svg/static/icons/svg/733/733603.svg" width="32" style="width: 30px;"></a></li>
-    <li><img src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" width="32" style="width: 30px;"></li>
-    <li><img src="https://www.flaticon.com/svg/static/icons/svg/733/733614.svg" width="32" style="width: 31px;"></li>
-  </ul>
-</div>
-<div class="clearfix">
-<h1>© 2020 Alpha Phi Beta</h1>
-</div>
-</div>
-</div>
+    
+      <!-- FOOTER START -->
+    <div class="footer">
+      <div class="contain">
+        <div class="col" style="margin: 20px 100px 0px 0px; width: 100%;" id="main-col">
+          <img src="/media/logo_white.png" alt="">
+          <h1 style="color: white; font-weight: 600; font-size: larger;">ALPHA PHI BETA</h1>
+          <h1 style="color: white; font-weight: 600;">UNIVERSITY OF THE PHILIPPINES <br> COLLEGE OF LAW</h1>
+          <ul>
+            <li>Malcolm Hall, Osmeña Avenue, UP Diliman, Quezon City, 1101</li>
+          </ul>
+        </div>
+      <div class="col">
+        <h1>About Us</h1>
+        <ul>
+          <li><a href="html/history.html">History</a></li>
+          <li><a href="html/stories.html">Stories</a></li>
+          <li><a href="html/events.html">Events</a></li>
+          <li><a href="html/founders.html">Founders</a></li>
+          <li><a href="html/contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Honor Roll</h1>
+        <ul>
+          <li><a href="html/honorroll.html">Our Bar Top Notchers</a></li>
+          <li><a href="html/honorroll.html">Our Editors-In-Chief</a></li>
+          <li><a href="html/honorroll.html">Our Lord Chancellors</a></li>
+        </ul>
+      </div>
+      <div class="col">
+        <h1>Join Us</h1>
+        <ul>
+          <li><a href="html/join.html">Fill up the Form</a></li>
+        </ul>
+      </div>
+      <div class="col social">
+        <h1>Social</h1>
+        <ul>
+          <li><a href="https://www.facebook.com/alphaphibeta.org"><img src="https://www.flaticon.com/svg/static/icons/svg/733/733603.svg" width="32" style="width: 30px;"></a></li>
+          <li><img src="https://www.flaticon.com/svg/static/icons/svg/733/733635.svg" width="32" style="width: 30px;"></li>
+          <li><img src="https://www.flaticon.com/svg/static/icons/svg/733/733614.svg" width="32" style="width: 31px;"></li>
+        </ul>
+      </div>
+    <div class="clearfix">
+      <h1>© 2020 Alpha Phi Beta</h1>
+    </div>
+    </div>
+    </div>
+    <!-- END OF FOOTER -->
+    
+    <script>
+      var text = ["<marquee behavior='slide' direction='up' class='motto'>for knowledge is power</marquee>", "<marquee behavior='slide' direction='up' class='motto'>but only wisdom is liberty</marquee>", "<marquee behavior='slide' direction='up' class='motto'>we will not be saved without wisdom</marquee>"];
+      var counter = 0;
+      setInterval(change, 3000);
+      function change() {
+          document.getElementById("text_slider").innerHTML = text[counter];
+          counter++;
+          if(counter >= text.length) { counter = 0; }
+      }
+    </script>
 <!-- END OF FOOTER -->
 
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

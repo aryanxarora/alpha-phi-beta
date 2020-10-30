@@ -652,7 +652,6 @@ small:before {
 
   #myVideo {
     bottom: 0;
-
   }
 
   .section4 .card {
@@ -673,7 +672,6 @@ small:before {
   .section4 .slider {
     display: grid;
     place-items: center;
-    background-color: red;
     width: 90%;
 
   }
