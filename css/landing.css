@@ -593,6 +593,8 @@ small:before {
   text-transform: uppercase;
   font-weight: 600;
   font-size: 2vw;
+  position: relative;
+  top: 5px;
 }
 
 .section3 {
@@ -677,7 +679,9 @@ small:before {
   }
 
   .section5 .motto {
-    font-size: 1rem;
+    font-size: 1.2rem;
+    position: relative;
+    top: 8px;
   }
 
   .logo {
